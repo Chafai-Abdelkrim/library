@@ -1,0 +1,56 @@
+/*COLOR PALETTE
+red papaya: #C64831
+candy orange: #F28F5B
+Jasmine: #F4E9E2
+daisy bud: #F2C378
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #C64831;
+    color: #F4E9E2;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    filter: invert(95%) sepia(32%) saturate(234%) hue-rotate(299deg) brightness(99%) contrast(93%);
+}
+.logo h1 {
+    letter-spacing: 1rem;
+}
+header button {
+    background-color: #F28F5B;
+    color: #F4E9E2;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 25px 0 25px 0;
+    transition: .5s;
+}
+header button:hover {
+    border-radius: 20px;
+}
+/* main content area */
+main{
+
+}
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
