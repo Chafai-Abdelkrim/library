@@ -19,26 +19,27 @@
     </header>
     
     <main>
-        <button class="addBtn">
+        <button class="addNewBookBtn">
             <img src="img/book-plus.svg" alt="plus book">
             <span>Add Book</span>
         </button>
+        <div class="popup"> 
+            <form id='form' action='/script.js'>
+                <span class="close">&times;</span>
+                <div id='textInput'>
+                    <input type='text' id='title' name='title' placeholder='Title' required>
+                    <input type='text' id='author' name='author' placeholder='Author' required>
+                    <input type='number' id='pages' name='pages' placeholder='Pages' required>
+                </div>
+                <div id='checkboxInput'>
+                    <label >Read: </label>
+                    <input type='checkbox' id='read' name='read' value='yes'>
+                </div>
+                <button type='submit' form='form' id='formAddbtn'>Add</button>
+            </form>
+        </div>
         <div class="books-container">
-            <div class="popup"> 
-                <form id='form' action='/script.js'>
-                    <span class="close">&times;</span>
-                    <div id='textInput'>
-                        <input type='text' id='title' name='title' placeholder='Title' required>
-                        <input type='text' id='author' name='author' placeholder='Author' required>
-                        <input type='number' id='pages' name='pages' placeholder='Pages' required>
-                    </div>
-                    <div id='checkboxInput'>
-                        <label >Read: </label>
-                        <input type='checkbox' id='read' name='read' value='yes'>
-                    </div>
-                    <button type='submit' form='form' id='formAddbtn'>Add</button>
-                </form>
-            </div>
+           
         </div>
     </main>
     <footer>

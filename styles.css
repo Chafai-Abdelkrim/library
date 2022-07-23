@@ -50,7 +50,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.addBtn {
+.addNewBookBtn {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -61,20 +61,20 @@ main{
     color: grey;
     transition: .4s;
 }
-.addBtn:hover {
+.addNewBookBtn:hover {
     padding: 10px;
     box-shadow: 0 0 5pt 2pt #D3D3D3;
     color: #F28F5B;
     cursor: pointer;
 }
-.addBtn:hover img {
+.addNewBookBtn:hover img {
     filter: invert(40%) sepia(38%) saturate(1579%) hue-rotate(330deg) brightness(83%) contrast(96%);
 }
-.addBtn img {
+.addNewBookBtn img {
     width: 30px;
     filter: invert(56%) sepia(15%) saturate(13%) hue-rotate(1deg) brightness(88%) contrast(86%);
 }
-.addBtn span {
+.addNewBookBtn span {
     border: none;
     background-color: transparent;
     font-size: 2rem;
@@ -82,7 +82,7 @@ main{
 }
 /* popup form */
 .popup {
-    /* display: none; */ 
+    display: none; 
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -163,9 +163,11 @@ main{
 }
 /* books area */
 .books-container {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px; */
+    gap: 30px;
+    border: 1px solid black;
+    width: 62%;
 }
 /* footer */
 footer {
