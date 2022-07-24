@@ -16,7 +16,7 @@ class Book {
     constructor(title, author, pages, read){
         this.title = form.title.value;
         this.author = form.author.value;
-        this.pages = form.pages.value + '📃';
+        this.pages = form.pages.value + ' 📃';
         this.read = form.read.checked;
     }
 };
@@ -62,8 +62,9 @@ function generateBook(bookObj){
     bookDiv.appendChild(authorDiv);
 
     pageDiv.textContent = 'pages : ' + bookObj.pages;
-    bookDiv.appendChiled(pageDiv);
+    bookDiv.appendChild(pageDiv);
 
+    bookDiv.appendChild(isReadBtn);
     if (bookObj.read === true) {
         isReadBtn.textContent = 'Read';
         isReadBtn.style.backgroundColor = '#C1E1C1';

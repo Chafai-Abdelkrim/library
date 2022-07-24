@@ -1,14 +1,11 @@
-/*COLOR PALETTE
-red papaya: #C64831
-candy orange: #F28F5B
-Jasmine: #F4E9E2
-daisy bud: #F2C378
-*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    position: relative;
 }
 /* header */
 header {
@@ -166,21 +163,20 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    border: 1px solid black;
     width: 62%;
+    margin-bottom: 55px;
 }
 /* DOM book elements */
 .book {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid black;
+    border: 5px solid #C64831;
     border-radius: 25px;
-    height: 300px;
-    width: 250px;
     padding: 15px;
     margin: 20px;
-    background-color: #fbd082;
+    background-color: #F4E9E2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .title {
     font-size: 30px;
@@ -201,15 +197,20 @@ main{
     width: 110px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border: solid 3px black;
+    
+}
+.readBtn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .removeBtn {
     font-size: 20px;
     height: 35px;
     width: 110px;
     border-radius: 10px;
-    border: solid 3px black;
     background-color: #d7d9da;
+}
+.removeBtn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 button:focus {
     outline:0;
@@ -217,11 +218,22 @@ button:focus {
 
 /* footer */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, .2);
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 50px;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.footer-content img {
+    margin-left: 10px;
+}
+.footer-content a:hover img {
+    transition: .5s;
+    transform: rotateY(360deg);
+    filter: invert(40%) sepia(38%) saturate(1579%) hue-rotate(330deg) brightness(83%) contrast(96%);
 }
