@@ -116,6 +116,7 @@ main{
     border: 1px solid #F28F5B;
     box-shadow: 0 0 5pt 2pt #D3D3D3;
 }
+
 #checkboxInput {
     display: flex;
     align-items: center;
